@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CHIMERA: Electronic Data Capture Simplifed</title>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/fontawesome-pro-5.15.4/css/all.css">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="Login" class="col">
+                        <div class="glass" style="width:355px">
+                            <div class="card-body">
+                                <div class="row" style="text-align: center; justify-content: center;">
+                                    <div class="col" style="width: 100%;margin-top: -25px;">
+                                        <span class="logo-text">chimera</span>
+                                    </div>
+                                </div>
+                                <form name="appLogin" id="appLogin" action="LoginProcess.cfm" method="POST" autocomplete="off">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                                            <input type="text" class="form-control userid" id="userid" name="userid" autocomplete="username" placeholder="Active Directory Username" autofocus />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text"><i class="far fa-key-skeleton"></i></span>
+                                            <input type="password" class="form-control userpassword" name="password" autocomplete="current-password" id="password" placeholder="Active Directory Password" />
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="loginMessage" class="alert alert-info" role="alert" style="display:none">
+                                            A simple light alert—check it out!
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:5px; margin-bottom: 5px">
+                                    <div class="col-8"><button type="button" class="btn btn-link iForgot" style="color: darkblue"
+                                            link="https://oneaccess.mdanderson.org/">Forgot Password <i class="fas fa-link"></i></button></div>
+                                    <div class="col-4">
+                                        <button id="login2App" type="submit" class="btn  btn-primary login2App">Login <i class="fas fa-sign-in-alt fa-fw "></i></button>
+                                    </div>
+                                </div>
+                           </form>
+                                <div class="card-footer" style="background-color: white; font-size:11px; border-radius: 5px;">
+                                    <span style="font-weight: bold; color: red">UNAUTHORIZED ACCESS TO THIS NETWORK DEVICE IS
+                                        PROHIBITED.</span> <br>Use of this application is for authorized University of Texas M. D. Anderson Cancer Center (UTMDACC) users only. This computer system is the property of UTMDACC. It may be used only as authorized by UTMDACC. Individuals accessing or using this computer system have no expectation of privacy with respect to such access or usage except as may otherwise be provided by applicable privacy laws. Pursuant to Texas Administrative Code Section 202.7, usage is subject to security testing and monitoring as appropriate, and misuse is subject to criminal prosecution. Report any suspected unauthorized activity to the Information Security Department at 713-745-9000.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="glass">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col" style="text-align: center; justify-content: center;">
+                                    <img src="images/chimera.png" style="border-radius: 5px;" width="600"/>
+                                </div>
+                            </div>
+                            
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a class="card" style="text-align: center; justify-content: center;" data-bs-placement="bottom" data-bs-toggle="popover" data-bs-animation="true" data-bs-trigger="hover" data-bs-html="true" title="Search" data-bs-content="Search Histologies.">
+                                                <div class="card-body">
+                                                    <i class="fas fa-search fa-3x"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="card" style="text-align: center; justify-content: center;"data-bs-placement="bottom" data-bs-toggle="popover" data-bs-animation="true" data-bs-trigger="hover" html="true" title="Dashboards" data-bs-content="Clinical Trial Dashboards">
+                                                <div class="card-body">
+                                                    <i class="fas fa-analytics fa-3x"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="card" style="text-align: center; justify-content: center;"data-bs-placement="bottom" data-bs-toggle="popover" data-bs-animation="true" data-bs-trigger="hover" html="true" title="Enroll" data-bs-content="Enroll in a Study or Clinical Trial">
+                                                <div class="card-body">
+                                                    <i class="fas fa-envelope fa-3x"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="card" style="text-align: center; justify-content: center;"data-bs-placement="bottom" data-bs-toggle="popover" data-bs-animation="true" data-bs-trigger="hover" html="true" title="Data" data-bs-content="Request Custom Data">
+                                                <div class="card-body">
+                                                    <i class="fas fa-database fa-3x"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="card" style="text-align: center; justify-content: center;"data-bs-placement="bottom" data-bs-toggle="popover" data-bs-animation="true" data-bs-trigger="hover" html="true" title="Request" data-bs-content="Request Application User Access">
+                                                <div class="card-body">
+                                                    <i class="fas fa-shield-alt fa-3x"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="node_modules/jquery/dist/jquery.js" crossorigin="anonymous"></script>
+        <script src="node_modules/@popperjs/core/dist/umd/popper.js" crossorigin="anonymous"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+<script>  
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+    });
+</script>

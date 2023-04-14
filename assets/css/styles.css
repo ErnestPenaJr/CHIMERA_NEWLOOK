@@ -1,0 +1,119 @@
+﻿body, input, textarea {
+    font-family: font-face, "Lucida Grande", Myria, Helvetica Neue Light, Helvetica Neue, Helvetica, Century Schoolbook, Arial, Verdana, sans-serif;
+    font: 35px/50px;
+}
+
+
+body {
+    background: url('../images/H070320_01_N65_bdc1_crop.jpeg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.37);
+}
+.facebook-style-dark {
+    -moz-box-shadow: inset 0 1px 0 0 #4c72bd;
+    -webkit-box-shadow: inset 0 1px 0 0 #4c72bd;
+    background: #4267b2;
+    color: #fff;
+    border: 1px solid #4267b2;
+    border-radius: 5px;
+    text-shadow: 0 1px 0px 0 #4267b2;
+}
+.facebook-style-dark:hover {
+    background: #4267b2;
+    color: #fff;
+    border: 1px solid #4267b2;
+    text-shadow: 0 1px 0px 0 #4267b2;
+}
+.facebook-style-dark:active {
+    background: #1d4698;
+    color: #fff;
+    border: 1px solid #4267b2;
+    text-shadow: 0 1px 0px 0 #4267b2;
+}
+
+.logo-text{
+    font-family: font-face, "Lucida Grande", Myria, Helvetica Neue Light, Helvetica Neue, Helvetica, Century Schoolbook, Arial, Verdana, sans-serif;
+    color: rgb(182, 18, 18);
+    font-size: 75px;
+    letter-spacing:5px;
+    text-align:center;
+    text-shadow:2px 2px 4px rgb(24, 24, 24);
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.fas{
+    color: rgb(64, 64, 64);
+}
+.fas:hover{
+    color: rgb(182, 18, 18);
+}
+h1 {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+h2, h3 {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.h3 {
+    font-size: 28px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.menuItem{
+    float:left; margin-right:10px; margin-left:10px; margin-top:10px; margin-bottom:10px;
+    text-decoration:none;
+    color:grey;
+    text-shadow:none;
+}
+.menuItem:hover{
+    color:red;
+    text-shadow: 2px;
+    text-decoration:underline;
+}
+.invisible{
+    display:none
+}
+
+#pageHeader{
+    width:100%;
+    position: fixed;
+    top:0;
+}
+
+.pageBody {
+    width: 98%;
+    height:78%;
+    position: fixed;
+    top: 30px;
+    margin: 10px 10px 10px 10px;  
+}
+
+#pageBody {
+    margin: auto;
+    width:100%;
+}
+
+#pageFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
